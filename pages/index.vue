@@ -1,8 +1,20 @@
 <template>
 	<section class="container">
-		Clean ...
+		<div>
+			<nav-bar />
+		</div>
 	</section>
 </template>
+
+<script>
+import NavBar from '~/components/NavBar.vue'
+
+export default {
+	components: {
+		NavBar
+	}
+}
+</script>
 
 <style>
 .container {
