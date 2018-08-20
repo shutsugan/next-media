@@ -26,5 +26,32 @@ a {
 	color: #ae76b3;
 	text-decoration: none;
 }
+
+.carousel {
+    position: relative;
+}
+
+.carousel__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .3s;
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel__item {
+    text-align: right;
+}
+
+.carousel__next {
+    display: none;
+    right: 0px;
+}
+
+.carousel__prev {
+    display: none;
+    right: auto;
+    left: -20px;
+}
 </style>
 
