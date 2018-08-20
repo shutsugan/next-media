@@ -6,8 +6,9 @@ class Carousel {
 	 * @param {Object} [options.slidesToScroll=1] Number of items to be slided
 	 * @param {Object} [options.slidesVisible=1] Number of visible items
 	 * @param {boolean} [options.loop=false] should loop in the end of the carousel.
+     * @param {Function} cb called at the end of next/prev transition.
 	 */
-    constructor(element, options = {}) {
+    constructor(element, options = {}, cb = _ => {}) {
         this.element = element;
         this._options = Object.assign({}, {
             slidesToScroll: options.slidesToScroll,
@@ -16,7 +17,6 @@ class Carousel {
         }, options);
 
         this._container = this._createDivWithClass('carousel__container');
-
         const children = Array.from(this.element.children);
 
         this.current_item = 0;
@@ -49,6 +49,10 @@ class Carousel {
             else if (event.key === 'ArrowLeft' || event.key === 'Left') this._prev();
         });
 
+        //callback called when the swipe complete
+        //from eather sides.
+        this.cb = cb;
+
         new TouchPlugin(this);
     }
 
@@ -62,7 +66,9 @@ class Carousel {
         this.items.forEach(item => item.style.width = (100 / ratio) + "%");
     }
 
-
+    /**
+     * Create the navigation buttons of the carousel.
+	 */
     _createNavigation() {
         const next_button = this._createDivWithClass('carousel__next');
         const prev_button = this._createDivWithClass('carousel__prev');
@@ -92,10 +98,12 @@ class Carousel {
 
     _next() {
         this._gotoItem(this.current_item + this._options.slidesToScroll);
+        this.cb(1);
     }
 
     _prev() {
         this._gotoItem(this.current_item - this._options.slidesToScroll);
+        this.cb(-1);
     }
 
 	/**

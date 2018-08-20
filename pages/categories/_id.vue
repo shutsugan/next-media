@@ -48,7 +48,9 @@ export default {
                 loop: false
             };
 
-            new Carousel(container, options);
+            new Carousel(container, options, direction => {
+                this.current_article += direction;
+            });
         });
     },
     methods: {

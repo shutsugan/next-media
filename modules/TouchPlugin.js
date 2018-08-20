@@ -20,7 +20,7 @@ class TouchPlugin {
     }
 
 	/**
-	 * Starts the placement fo the touch
+	 * Starts the placement of the touch
 	 * @param {MouseEvent|TouchEvent} event
 	 */
     _startDrag(event) {
