@@ -2,16 +2,19 @@
 	<section class="container">
 		<div>
 			<nav-bar />
+			<nav-bar-menu />
 		</div>
 	</section>
 </template>
 
 <script>
 import NavBar from '~/components/NavBar.vue'
+import NavBarMenu from '~/components/NavBarMenu.vue'
 
 export default {
 	components: {
-		NavBar
+		NavBar,
+		NavBarMenu
 	}
 }
 </script>

@@ -21,5 +21,10 @@ html {
 	outline: none;
   margin: 0;
 }
+
+a {
+	color: #ae76b3;
+	text-decoration: none;
+}
 </style>
 
