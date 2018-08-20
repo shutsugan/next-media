@@ -3,6 +3,9 @@
 		<div>
 			<nav-bar />
 			<nav-bar-menu />
+			<articles-list 
+				url="http://femme.nextmedia.ma/api/get_recent_posts/?page=" 
+			/>
 		</div>
 	</section>
 </template>
@@ -10,11 +13,13 @@
 <script>
 import NavBar from '~/components/NavBar.vue'
 import NavBarMenu from '~/components/NavBarMenu.vue'
+import ArticlesList from '~/components/ArticlesList.vue'
 
 export default {
 	components: {
 		NavBar,
-		NavBarMenu
+		NavBarMenu,
+		ArticlesList
 	}
 }
 </script>
