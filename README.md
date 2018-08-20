@@ -31,31 +31,31 @@ For detailed explanation on how things work, checkout the [Nuxt.js docs](https:/
 
 ## Functional spec
 
-###Swipeable navbar list
+### Swipeable navbar list
 
 As a user you can browse the categories using the swipeable navbar.
 
 ![navbar list screenshot](https://github.com/shutsugan/next-media/blob/master/screenshots/navbar-list.gif)
 
-###Recent posts
+### Recent posts
 
 As a user you have the ability to browse through recent posts.
 
 ![recent posts screenshot](https://github.com/shutsugan/next-media/blob/master/screenshots/recent-posts.gif)
 
-###Load more posts
+### Load more posts
 
 As a user you have the ability to load more posts to browse.
 
 ![load more posts screenshot](https://github.com/shutsugan/next-media/blob/master/screenshots/load-more.gif)
 
-###Show single page
+### Show single page
 
 As a user you have the to Show a single page post.
 
 ![show single page screenshot](https://github.com/shutsugan/next-media/blob/master/screenshots/show-single.gif)
 
-###Swipe between articles
+### Swipe between articles
 
 As a user you can swipe between multiple articles.
 
