@@ -51,7 +51,7 @@ As a user you have the ability to load more posts to browse.
 
 ### Show single page
 
-As a user you have the to Show a single page post.
+As a user you have the ability to show a single page post.
 
 ![show single page screenshot](https://github.com/shutsugan/next-media/blob/master/screenshots/show-single.gif)
 
