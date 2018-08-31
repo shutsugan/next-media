@@ -14,7 +14,6 @@ import orLogo from '~/assets/images/or-logo.png';
 
 export default {
 	props: ['logo'],
-  
 	data () {
 		return {
 			current_logo: this.logo === '../assets/images/logo.png'

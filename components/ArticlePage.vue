@@ -58,18 +58,20 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .ArticlePage {
     height: 1px;
     max-width: 960px;
 }
 
-.ArticlePage__excerpt {
-    font-size: 1.1em;
-    font-weight: bold;
-}
+.ArticlePage {
+    .ArticlePage__excerpt {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
 
-.ArticlePage__content {
-    font-size: 1em;
+    .ArticlePage__content {
+        font-size: 1em;
+    }
 }
 </style>

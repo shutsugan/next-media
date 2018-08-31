@@ -33,6 +33,7 @@ export default {
 	align-items: center;
 	text-align: center;
 	overflow-x: hidden;
+	transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
 }
 </style>
 

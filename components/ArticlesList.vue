@@ -40,17 +40,16 @@ export default {
                 .catch(err => console.error(err));
         },
         loadMoreArticles: function(event) {
-            const page = ++this.page;
-
+            //increment the page number, and 
             //show the loading indicator.
+            const page = ++this.page;
             const target = this.loadingMoreIndocator(event);
 
-            this.fetchArticles(page, _ => {
-                target.textContent = '+';
-            });
+            this.fetchArticles(page, _ => target.textContent = '+');
         },
         loadingMoreIndocator: function(event) {
             const loader = '<i class="material-icons">hourglass_empty</i>';
+            
             const target = event.target;
             target.textContent = '';
             target.insertAdjacentHTML('afterbegin', loader);
