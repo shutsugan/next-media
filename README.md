@@ -6,7 +6,7 @@
 
 ### Installing Node.js and npm
 
-This application has been tested on Node.js 10.0.0 and npm 6.3.0.     
+This application has been tested on Node.js 10.7.0 and npm 6.3.0.     
 These packages available here for download [here](https://nodejs.org/en/).  
 Choose the "Current" version for download.
 
