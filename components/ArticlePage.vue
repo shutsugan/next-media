@@ -4,6 +4,7 @@
             :article="article"
             :big="true"
         />
+        <social-section />
         
         <div class="ArticlePage__excerpt">
             <p>{{article.excerpt | stripHtmlTags}}</p>
@@ -12,16 +13,20 @@
         <div class="ArticlePage__content">
             {{article.content}}
         </div>
+
+        <social-section />
     </div>
 </template>
 
 <script>
 import ArticleCard from '~/components/ArticleCard.vue'
+import SocialSection from '~/components/SocialSection.vue'
 
 export default {
     props: ['article'],
     components: {
-        ArticleCard
+        ArticleCard,
+        SocialSection
     },
     data() {
         return {
@@ -62,6 +67,7 @@ export default {
 .ArticlePage {
     height: 1px;
     max-width: 960px;
+    width: 350px;
 }
 
 .ArticlePage {
@@ -73,5 +79,30 @@ export default {
     .ArticlePage__content {
         font-size: 1em;
     }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    iframe {
+        width: 350px !important;
+    }
+
+    @media screen and (min-width: 690px) {
+        iframe {width: 670px !important;}
+    }
+
+    @media screen and (min-width: 930px) {
+        iframe {width: 910px !important;}
+    }
+}
+
+@media screen and (min-width: 690px) {
+    .ArticlePage {width: 670px;}
+}
+
+@media screen and (min-width: 930px) {
+    .ArticlePage {width: 910px;}
 }
 </style>
