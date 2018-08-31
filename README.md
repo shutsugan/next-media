@@ -6,14 +6,14 @@
 
 ### Installing Node.js and npm
 
-This application has been tested on Node.js 10.0.0 and npm 6.3.0.
-These packages available here for download [here](https://nodejs.org/en/).
+This application has been tested on Node.js 10.0.0 and npm 6.3.0.     
+These packages available here for download [here](https://nodejs.org/en/).  
 Choose the "Current" version for download.
 
 To run the app:
--Clone the git repository.
--`cd` into the directory.
--Then install the dependencies
+- Clone the git repository.
+- `cd` into the directory.
+- Then install the dependencies
 
 ``` bash
 # install dependencies
