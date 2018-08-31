@@ -1,6 +1,9 @@
 <template>
     <div class="ArticlePage">
-        <article-card :article="article"/>
+        <article-card 
+            :article="article"
+            :big="true"
+        />
         
         <div class="ArticlePage__excerpt">
             <p>{{article.excerpt | stripHtmlTags}}</p>

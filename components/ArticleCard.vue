@@ -5,7 +5,7 @@
                 <img class="ArticleCard__poster" :src="thumbnail" :alt="title">
                 <span class="ArticleCard__badge">{{category}}</span>
             </div>
-            <div class="ArticleCard__title">
+            <div :class="[big === true ? 'ArticleCard__title--big' : 'ArticleCard__title']">
                 <p>{{title}}</p>
             </div>
             <div class="ArticleCard__date">
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-    props: ['article'],
+    props: ['article', 'big'],
     data() {
         return {
             id: '',
@@ -56,7 +56,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .ArticleCard {
     display: flex;
     flex-direction: column;
@@ -64,37 +64,57 @@ export default {
     width: 100%;
     height: auto;
     margin-bottom: 30px;
+    animation-duration: .3s;
+    animation-name: fadein;
 }
 
-.ArticleCard__poster-section {
-    position: relative;
+.ArticleCard {
+    .ArticleCard__poster-section {
+        position: relative;
+    }
+
+    .ArticleCard__poster {
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+        background: #DDD;
+    }
+
+    .ArticleCard__badge {
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+        padding: 0px 8px;
+        border-radius: 3px;
+        background: #db0303;
+        font-size: .6em;
+        color: #FFF;
+    }
+
+    .ArticleCard__title {
+        font-size: 1.2em;
+        color: #000;
+    }
+
+    .ArticleCard__title--big {
+        font-size: 1.8em;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .ArticleCard__date {
+        font-size: .7em;
+        color: #767676;
+    }
 }
 
-.ArticleCard__poster {
-    width: 100%;
-    min-width: 100%;
-    height: auto;
-    background: #DDD;
-}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
 
-.ArticleCard__badge {
-    position: absolute;
-    right: 0;
-    bottom: 0px;
-    padding: 0px 8px;
-    border-radius: 3px;
-    background: #db0303;
-    font-size: .6em;
-    color: #FFF;
-}
-
-.ArticleCard__title {
-    font-size: 1.2em;
-    color: #000;
-}
-
-.ArticleCard__date {
-    font-size: .7em;
-    color: #767676;
+    to {
+        opacity: 1;
+    }
 }
 </style>

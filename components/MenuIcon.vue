@@ -1,20 +1,23 @@
 <template>
-  <div class="MenuIcon">
-    <i class="material-icons">menu</i>
-  </div>
+	<div class="MenuIcon">
+		<i class="material-icons">menu</i>
+	</div>
 </template>
 
-<style>
+<style lang="scss">
+$font-color: #f8f8f8;
+$dimension: 60px;
+
 .MenuIcon {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  color: #f8f8f8;
-  cursor: pointer;
+	position: absolute;
+	top: 0px;
+	right: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: $dimension;
+	height: $dimension;
+	color: $font-color;
+	cursor: pointer;
 }
 </style>

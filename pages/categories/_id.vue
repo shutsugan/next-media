@@ -66,7 +66,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .container {
 	min-height: 100vh;
 	display: flex;
@@ -77,39 +77,41 @@ export default {
 	overflow-x: hidden;
 }
 
-.categories__container {
-    width: 100%;
-    max-width: 100vw;
-}
+.container {
+    .categories__container {
+        width: 100%;
+        max-width: 100vw;
+    }
 
-.categories {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: auto;
-}
+    .categories {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
 
-.categories__tabs {
-    width: 28%;
-    height: 200px;
-    margin: 16px auto;
-}
-
-@media screen and (min-width: 690px) {
     .categories__tabs {
-        width: 50%;
+        width: 330px;
         height: 200px;
         margin: 16px auto;
     }
-}
 
-@media screen and (min-width: 930px) {
-    .categories__tabs {
-        width: 68%;
-        height: 200px;
-        margin: 16px auto;
+    @media screen and (min-width: 690px) {
+        .categories__tabs {
+            width: 670px;
+            height: 200px;
+            margin: 16px auto;
+        }
+    }
+
+    @media screen and (min-width: 930px) {
+        .categories__tabs {
+            width: 910px;
+            height: 200px;
+            margin: 16px auto;
+        }
     }
 }
 </style>

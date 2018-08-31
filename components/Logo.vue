@@ -25,16 +25,18 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .Logo {
 	height: 30px;
 	width: 154px;
 	text-align: center;
 }
 
-.Logo__image {
-    max-width: 100%;
-    height: 100%;
+.Logo {
+	.Logo__image {
+		max-width: 100%;
+		height: 100%;
+	}
 }
 </style>
 

@@ -4,6 +4,7 @@
             v-for="article in articles"
             :key="article.id"
             :article="article"
+            :big="false"
         />
         <button 
             class="ArticlesList__load-more-btn js-load-more"
@@ -60,7 +61,10 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+$icon-color: #DDD;
+$font-color: #FFF;
+
 .ArticlesList {
     display: flex;
     flex-direction: column;
@@ -71,20 +75,23 @@ export default {
     padding: 16px;
 }
 
-.ArticlesList__load-more-btn {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: solid 1px #CCC;
-    background: transparent;
-    font-size: 2em;
-    color: #CCC;
-    cursor: pointer;
-    transition: .3s;
-}
+.ArticlesList {
+    .ArticlesList__load-more-btn {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: solid 1px;
+        border-color: $icon-color;
+        background: transparent;
+        font-size: 2em;
+        color: $icon-color;
+        cursor: pointer;
+        transition: .3s;
+    }
 
-.ArticlesList__load-more-btn:hover {
-    background: #CCC;
-    color: #FFF;
+    .ArticlesList__load-more-btn:hover {
+        background: $icon-color;
+        color: $font-color;
+    }
 }
 </style>

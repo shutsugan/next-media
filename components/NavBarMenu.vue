@@ -53,7 +53,9 @@
     }
 </script>
 
-<style>
+<style lang="scss">
+$font-color: #ae76b3;
+
 .NavBarMenu {
     display: flex;
     flex-direction: row;
@@ -63,7 +65,7 @@
     height: 45px;
     border-top: solid .5px #83328e;
     background: linear-gradient(45deg, #6d2f8f, #a2378e);
-    color: #ae76b3;
+    color: $font-color;
     cursor: pointer;
 }
 

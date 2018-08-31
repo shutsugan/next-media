@@ -6,7 +6,10 @@
     </nuxt-link>
 </template>
 
-<style>
+<style lang="scss">
+$dimension: 60px;
+$icon-color: #DDD;
+
 .BackIcon {
     position: absolute;
     top: 0px;
@@ -14,9 +17,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 60px;
-    color: #DDD;
+    width: $dimension;
+    height: $dimension;
+    color: $icon-color;
     cursor: pointer;
 }
 </style>

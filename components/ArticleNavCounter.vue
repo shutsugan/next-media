@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .ArticleNavCounter {
     display: flex;
     justify-content: center;
@@ -25,16 +25,18 @@ export default {
     background: linear-gradient(45deg, #6d2f8f, #a2378e);
 }
 
-.ArticleNavCounter__bullet{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #ae76b3;
-    margin: 0 4px;
-    transition: .3s;
-}
+.ArticleNavCounter {
+    .ArticleNavCounter__bullet{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #ae76b3;
+        margin: 0 4px;
+        transition: .3s;
+    }
 
-.active {
-    background: #FFF;
+    .active {
+        background: #FFF;
+    }
 }
 </style>
