@@ -6,9 +6,9 @@
 
 ### Installing Node.js and npm
 
-This application has been tested on Node.js 10.0.0 and npm 6.3.0 
-- these packages should be available for download [here](https://nodejs.org/en/) 
-- choose the "Current" version for download.
+This application has been tested on Node.js 10.0.0 and npm 6.3.0.
+These packages should be available for download [here](https://nodejs.org/en/).
+Choose the "Current" version for download.
 
 ``` bash
 # install dependencies
@@ -39,11 +39,13 @@ As a user you can browse the categories using the swipeable navbar.
 
 ![navbar list screenshot](https://github.com/shutsugan/next-media/blob/master/screenshots/navbar-list.gif)
 
+
 ### Recent posts
 
 As a user you have the ability to browse through recent posts.
 
 ![recent posts screenshot](https://github.com/shutsugan/next-media/blob/master/screenshots/recent-posts.gif)
+
 
 ### Load more posts
 
@@ -51,11 +53,13 @@ As a user you have the ability to load more posts to browse.
 
 ![load more posts screenshot](https://github.com/shutsugan/next-media/blob/master/screenshots/load-more.gif)
 
+
 ### Show single page
 
 As a user you have the ability to show a single page post.
 
 ![show single page screenshot](https://github.com/shutsugan/next-media/blob/master/screenshots/show-single.gif)
+
 
 ### Swipe between articles
 
