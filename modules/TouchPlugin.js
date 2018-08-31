@@ -67,7 +67,7 @@ class TouchPlugin {
     _dragEnd(event) {
         if (this.origin && this.last_translate) {
             this.carousel.enableTransition();
-            if (Math.abs(this.last_translate.x / this.carousel.carouselWidth) > 0.2) {
+            if (Math.abs(this.last_translate.x / this.carousel.carouselWidth) > .05) {
                 if (this.last_translate.x < 0) this.carousel._next();
                 else this.carousel._prev();
             } else {

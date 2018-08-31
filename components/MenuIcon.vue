@@ -11,7 +11,7 @@ $dimension: 60px;
 .MenuIcon {
 	position: absolute;
 	top: 0px;
-	right: 16px;
+	right: 8px;
 	display: flex;
 	justify-content: center;
 	align-items: center;

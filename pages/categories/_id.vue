@@ -93,7 +93,7 @@ export default {
     }
 
     .categories__tabs {
-        width: 330px;
+        width: 350px;
         height: 200px;
         margin: 16px auto;
     }

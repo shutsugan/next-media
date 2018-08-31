@@ -69,6 +69,13 @@ $font-color: #ae76b3;
     cursor: pointer;
 }
 
+.NavBarMenu {
+    .carousel {
+        position: relative;
+        right: 16px;
+    }
+}
+
 .material-icons--margin-top {
     margin-top: 7px;
 }
